@@ -1,0 +1,15 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5; /*How many lines does the content acquire in the webpage.*/
+    background-color: papayawhip; /*Color for the webpage Background.*/
+    color: rgb(0, 0, 0);/*Color for the text content in this Tag.*/
+}
+
+h2{
+    color: #f00;/*Hex Color Code Method*/
+}
+
+p{
+    color: hsl(290, 98%, 34%);/*rgba coloring method,a controls the transparency of the color.*/
+}
