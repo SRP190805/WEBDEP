@@ -1,0 +1,45 @@
+/*Style sheet fro Basic2.html*/
+
+/*Universal Selector, Selects and applies a common style to everything on the css stylesheet.*/
+
+*{/*Universal is a parent element to every element on the stylesheet, therefore everything is inherited.*/
+    font-family: monospace;
+    border: 1px solid red;
+}
+
+/*Multiple Elements can be applied same styling using comma separated elements.*/
+h1, h2{
+    color: blue;
+}
+
+/*Normal Type Selector, Selects and applies to all instances.*/
+p{
+    color: purple;
+}
+
+body{/*Parent Element*/
+    font-size: 22px;/*Inherited by other child elements.*/
+    border: 3px solid black;/*Not Inherited.*/
+}
+
+/*Nested Selector, Looks for second element inside of the first element, Applies to all instances.*/
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*Class Type Selector, applies only to those Tags with the class gray.*/
+.gray{
+    color: grey;
+}
+
+/*Class Type Selector, applies only to those Tags with the class highlight.*/
+.highlight{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*ID Selector, Selects and applies to those tags who have that particular ID,Should Be Unique.*/
+#Second{
+    font-style: italic;
+}
