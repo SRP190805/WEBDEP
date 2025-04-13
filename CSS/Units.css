@@ -1,0 +1,27 @@
+/*This Stylesheet is for Basic4.html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    border: 2px dashed red;/*px-pixels, an absolute value measurement unit, 1/96(inch).*/
+    width: 50%;/*A fraction of some other value, Are always relative to another quantity.*/
+    font-size: 3rem;
+    padding: 0.5em;
+} 
+
+main{
+    width: 50vw;/*vw- viewports width, represents a percentage of the viewport's width*/
+    font-size: 2rem;/*rem-root em, root element relative value,rem represents the number of default size declared in the browser.*/
+}
+
+p{
+    font-size: 2em;/*amplifies the root realtive value, for eg: here the root value set by browser was 16px, and in main we did 2rem making it 32px, now p element amplifies it by number of em's making it 64px.*/
+    width: 40ch;/*ch- character, number of characters per line in the webpage.*/
+}
