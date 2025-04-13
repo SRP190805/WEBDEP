@@ -1,0 +1,34 @@
+/*This stylesheet is for Basic6.html*/
+
+/*
+  Typography is the way text is arranged and presented.
+*/
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+}
+
+input,button{/*Form elements do not typically inherit properties of body or any parent elements, unless specified.*/
+    font: inherit/*the inherit keyword used for any attribute let's the form elements inherit that attribute from the parent element.*/
+}
+
+p{
+    text-decoration: none;/*How to decorate the text-italic,bold,underline etc.*/
+
+    text-transform: lowercase;/*How to transform your text.*/
+
+    text-align: center;/*to which side the content should be aligned, left,right,center,top,bottom etc.*/
+
+    text-indent: 5em;/*Gives indentation, i.e. extra space for the first line of content.*/
+
+    line-height: 1.5;/*Row size of the content, Horizontal space acquired by the content.*/
+
+    letter-spacing: 1em;/*Used for spacing the letters from one another.*/
+
+    word-spacing: 2em;/*Used for spacing the words from one another.*/
+
+    font-weight: 900;/*controls the weight of the characters, i.e. how much bold the charcters would be.*/
+
+    font-family: serif;/*Controls type of text, i.e. handwriting.*/
+}
