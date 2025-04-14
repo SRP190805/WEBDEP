@@ -1,0 +1,30 @@
+/*This stylesheet is for Basic7.html*/
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;/*defines how the pointer or cursor looks when hovered over the link or any other display.*/
+    color: hsl(207, 44%, 49%);
+}
+
+/*pseudo class for anchor element, Represents the current state of the element, Has more specificity than the actual element, visited class defines the state of element after being visited.*/
+a:visited{
+    color: purple;
+}
+
+/*hover class defines the state on/when the cursor/pointer is brought near/above the element.*/
+/*focus class depends on focusing the element if the user is using a screen reader rather than a mouse.*/
+a:hover, a:focus{
+    color: hsl(189, 44%, 49%);
+    opacity: 0.8;
+}
+
+/*active class defines the state after the element is clicked upon or being activated.*/
+a:active{
+    color: red;
+}
