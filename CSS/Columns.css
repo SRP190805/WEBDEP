@@ -1,0 +1,38 @@
+/*This stylesheet is for Basic11.html*/
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.columns{
+    column-count: 4;/*Describes the optimal number of columns into which the content of the element will be flowed.*/
+    column-width: 250px;/*Describes the width of columns in multicol elements.*/
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;/*Describes the page/column/region break behavior inside the principal box.*/
+    break-before: column;/*Describes the page/column/region break behavior before the generated box.*/
+}
+
+.columns .quote{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;/*Describes the page/column break behavior after the generated box.*/
+}
+
+.nowrap{
+    white-space: nowrap;/*Specifies how whitespace is handled in an element.*/
+}
