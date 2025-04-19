@@ -1,0 +1,121 @@
+/*This stylesheet is for Basic12.html*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container{
+    border: 3px dashed purple;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;/*this value here gives a relative measure of positioning for the elment of class absolute.*/
+}
+
+.inner-container{
+    border: 2px solid rgb(58, 7, 209);
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /* position: relative;/*it also is specificity based more specific or inner the declaration it relates to the closest ancestor.*/ 
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute{
+    background-color: blue;
+    position: absolute;/*The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements./*the absolute value of the position property relates to the ancestors positioning, if it does not have on it positions itself based on default browser page.*/
+    top: 0;
+    left: 0;
+    z-index: 1;/*For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context.*/
+}
+
+.relative{
+    background-color: red;
+    position: relative;/*Already relates to it's parent element and does not need to be predefined*/
+    top: 400px;
+    left: 100px;
+}
+
+.fixed{
+    background-color: green;
+    position: fixed;/*it remains at a fixed position once you define it, even after you scroll the webpage.*/
+    top: 100px;
+}
+
+.sticky{
+    background-color: rgb(251, 215, 11);
+    position: sticky;/*the sticky value for position property let's you stick that element or div into a ancestor element, if the ancestor element runs out of bounds when scrolling it would dissappear with it.*/
+    top: 0;
+    z-index: -1;
+}
+
+/* Remember, how to make things disappear! */
+
+/*////////////////*/
+html{
+    scroll-behavior: smooth;/*Specifies the scrolling behavior for a scrolling box, when scrolling happens due to navigation or CSSOM scrolling APIs.*/
+}
+
+section{
+    height: 100vh;
+}
+
+.blue{
+    background-color:  #00f;
+}
+
+.red{
+    background-color:  #f00;
+}
+
+.green{
+    background-color:  #0f0;
+}
+
+header, footer{
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+footer{
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    font-size: 3rem;
+}
+
+a:visited{
+    color: #fff;
+}
+
+.social{
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top:30%;
+    left: 0;
+    z-index: 1;
+}
