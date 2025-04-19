@@ -1,0 +1,48 @@
+/*This stylesheet is for Basic13.html*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;/*In combination with 'float' and 'position', determines the type of box or boxes that are generated for an element.*/
+    gap: 1rem;/*The gap CSS property is a shorthand property for row-gap and column-gap specifying the gutters between grid rows and columns.*/
+    justify-content: center;/*Aligns flex items along the main axis of the current line of the flex container.*/
+    align-items: center;/*Aligns flex items along the cross axis of the current line of the flex container.*/
+    flex-direction: row-reverse;/*Specifies how flex items are placed in the flex container, by setting the direction of the flex container's main axis.*/
+    flex-wrap: nowrap;/*Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in.*/
+    align-content: space-evenly;/*Aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis.*/
+}
+
+.box{
+/*     min-width: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 1;/*Sets the flex grow factor. Negative numbers are invalid.*/
+    flex-basis: 250px;/*Sets the flex basis.*/
+}
+
+.box:nth-child(2){
+    flex: 2 2 40%;/*Specifies the components of a flexible length: the flex grow factor and flex shrink factor, and the flex basis.*/
+    order: 0;/*Controls the order in which children of a flex container appear within the flex container, by assigning them to ordinal groups.*/
+}
